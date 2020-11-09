@@ -1,0 +1,30 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+<body>
+    <head><font size="9">Registration form</font></head>
+    <form action="*" method="POST"></form>
+    <fieldset>
+        <legend>Personal info</legend>
+        Name:<input type="text" name="username" id="username">
+        <br>Member<input type="radio" name="member" id="member" value="member">
+        Non member<input type="radio" name="nonmember" id="nonmember" value="nonmember"></br>
+        Email<input type="email" name="email" id="email">
+    </fieldset>
+    <fieldset>
+        <legend>Reservation info</legend>
+        <label for="Facility">Facility</label>
+        <select name="Facility" id="Facility">
+            <option value="Badminton">Badminton</option>
+            <option value="Squash">Squash</option>
+            <option value="Racquetball">Racquetball</option>
+        </select>
+        <br>Select a reservation date and time:<input type="datetime-local"></br>
+        <input type="checkbox" name="policy" id="policy">I agree to the club's reservation policy
+    </fieldset>
+    <br><input type="submit" value="Submit"></br>
+</body>
+</html>
